@@ -30,7 +30,7 @@
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list nav dense>
-        <v-subheader>みちくさびゅあー</v-subheader>
+        <v-subheader>みちくさびゅあー(シンプル)</v-subheader>
         <v-list-item-group
           v-model="group"
           active-class="deep-purple--text text--accent-4"
