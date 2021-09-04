@@ -1,15 +1,21 @@
 <template>
-  <hello-world />
+  <div class="home">
+    <ViewerContent :page="page"></ViewerContent>
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+// @ is an alias to /src
+import ViewerContent from "../components/ViewerContent.vue";
 
-  export default {
-    name: 'Home',
-
-    components: {
-      HelloWorld,
-    },
+export default {
+  name: "Home",
+  props: {
+    page: String,
+  },
+  data: () => ({}),
+  components: {
+    ViewerContent,
   }
+};
 </script>
